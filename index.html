@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>JavaScript от чайника</title>
+			<link rel="icon" type="image/png" href="img/fav.png" />	
+			<link rel="stylesheet" href="uikit/uikit.min.css" />
+			 	
+			 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+			    
+        <script src="jquery.js"></script>
+        <script src="uikit/uikit.min.js"></script>
+			 
+			 
+			 <link rel="stylesheet" type="text/css" href="fullPage/jquery.fullPage.css" />
+
+
+<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+<script src="fullPage/vendors/jquery.easings.min.js"></script>
+
+
+<!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
+<script type="text/javascript" src="fullPage/vendors/jquery.slimscroll.min.js"></script>
+
+<script type="text/javascript" src="fullPage/jquery.fullPage.js"></script>
+
+		<style type="text/css">
+		body{
+			background-color:#EEE;
+			font-family: sans-serif;
+		}
+		#content{
+			margin: 15%;
+		}
+			
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript">
+		$(document).ready(function() {
+    $('#fullpage').fullpage({  anchors:['join', 'menu', 'more', 'award', 'footer']});
+});
+		</script>
+		
+			<div id="fullpage">	
+				<div class="section active" id="join">
+				<div class="slide"> 
+				
+				
+				<p></p>
+				<p></p>
+				
+				<article id="content" class="uk-article">
+					<h1 class="uk-article-title">JavaScript от чайника</h1>
+					<p class="uk-article-meta">Моя цель лишь помочь сделать первые шаги, подготовить читателя к получения более сложной информации из срьезных изданий, по этому прошу прощение за слегка искаженное и упращеное объяснение многих концепций. </p>
+					<p class="uk-article-lead">Как-то раз, я попробовал научить основам программирования на JavaScript одну свою знакомую, как мне кажется у меня это не плохо получилось, родившийся в процессе матерьял вылился в этот маленький сайт.</p>
+					<p>Если быть честным я далек от того, что бы называть себя професиональным програмистом и брать на себя отвественность кого-то учить, но как мне кажется, у меня не плохо получется объяснять сложные вещи на простых примерах.</p>
+					<p>Страница имеет очень простую структуру, навигация в пределах одной темы происходит с лева на право с помощью стрелочек, а среди различных уроков с помощью скрола(колесо мыши) вверх и в низ.</p>
+					
+				</article>
+					
+ 				</div>
+ 					
+ 				</div>
+				</div>
+</div>
+	</body>
+
+</html>
