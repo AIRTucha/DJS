@@ -3,29 +3,22 @@
 	<head>
 		<meta charset="utf-8">
 		<title>l1</title>
-			
-		<!--<script src="jquery.ui.addresspicker.js"></script> ссылка на внешний скрипт-->
-			 
-		 
-		<!--<link rel="stylesheet" type="text/css" href="fullPage/jquery.fullPage.css" /> ссылка на внешний CSS-->
 		
-		
-		<!--Встроеный CSS-->
-		<style type="text/css"> 
-			h2{
-				margin-bottom: 5%;
-			}
-		</style>
 	</head>
 	<body>
 		<script type="text/javascript">
-var a={x:1,y:2};
 
-var b={a};
+		function fToC(degree,scale){
+		
+			switch(scale.toUpperCase()){
+			case 'C': degree=(degree*1.8)+32;
+				break;
+			case 'F': degree=(degree-32)/1.8;
+			default: degree="ERROR";
+			}
 
-b.x=3;
-
-console.log(a); // x=3, y=2
+			return degree;
+			}
 		</script>
 		<div id="head">
 		<!--Тег контенер, создан для того, что бы задовать положение и пр. свойства тому, что внутри-->
@@ -39,37 +32,7 @@ console.log(a); // x=3, y=2
 		<!--Тег параграф <p></p>-->
 <!--
 
-JavaScript
 
-		
-
-
-<!--IF	
-	
-	
-	
-	Switch
-	
-	так же существует конструкция switch, она создана для сравнения большого количества различных значений.
-	
-	switch(a){
-	case 1: сделай что-то;
-	break;
-	case 2: сделай что-то;
-	break;
-	default сделай что-то;
-}
-
-после case может стоять любое число или символ ' '. если переменая равна тому что стоит после кейс, по выполняются команды после : если команда многострочная, то ее надо выделить {}. break прирывает выполнение switch после совпадения.
-если совпадений не обнаружено то исполнаяется действие по уполчению после default. default не обязательно.
-
-ЗАДАНИЕ 8
-
-написать функцию получающую на входе значение от 1 до 12 и возвращаюшую назвение месяца, если число по умолчанию возвращать ошибку.
-
-ЗАДАНИЕ 9
-
-Переписать функция перодва градусов с свичем
 
 
 
